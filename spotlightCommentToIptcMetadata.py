@@ -86,7 +86,7 @@ def process_directory(directory):
 
 if __name__ == "__main__":
     from PIL import Image, ImageOps  # Import Image here to avoid previous issues
-    input_directory = "./TestImages/"
+    input_directory = "./"
     process_directory(input_directory)
 
 
