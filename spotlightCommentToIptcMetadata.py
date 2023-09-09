@@ -32,9 +32,6 @@ def update_caption_metadata(image_path, new_caption):
         
         # Open the image using pyexiv2
         image = pyexiv2.Image(image_path)
-        
-        # Read the existing metadata
-        #image.read_iptc()
 
         # Update the IPTC caption metadata
         image.modify_iptc({'Iptc.Application2.Caption':new_caption})
